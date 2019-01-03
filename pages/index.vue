@@ -9,10 +9,8 @@
       <h2 class="subtitle">
         Frank is so cool.
       </h2>
-      <div class="links">
-     
-      </div>
-      <div data-netlify-identity-button>Login with Netlify Identity</div>
+      
+      <div data-netlify-identity-button>Let's get started</div>
     </div>
   </section>
 </template>
