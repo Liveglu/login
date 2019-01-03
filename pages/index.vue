@@ -10,12 +10,9 @@
         Frank is so cool.
       </h2>
       <div class="links">
-        <!-- Add a menu:
-   Log in / Sign up - when the user is not logged in
-   Username / Log out - when the user is logged in
-  -->
-  <div data-netlify-identity-menu></div>
+     
       </div>
+      <div data-netlify-identity-button>Login with Netlify Identity</div>
     </div>
   </section>
 </template>
