@@ -13,6 +13,8 @@
       <div data-netlify-identity-button>Let's get started</div>
     </div>
   </section>
+        <div data-netlify-identity-button>Let's get started</div>
+
 </template>
 
 <script>
