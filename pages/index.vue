@@ -7,7 +7,7 @@
         Liveglu Login
       </h1>
       <h2 class="subtitle">
-        proof Frank isn't crazy.
+        Evidence of Frank's Genius.
       </h2>
       <div data-netlify-identity-button></div>
     </div>
