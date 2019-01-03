@@ -4,7 +4,7 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        Liveglu login
+        LIVEGLU LOGIN
       </h1>
       <h2 class="subtitle">
         Frank is so cool.
