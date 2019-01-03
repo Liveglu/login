@@ -9,7 +9,7 @@
       <h2 class="subtitle">
         proof Frank isn't crazy.
       </h2>
-      <div data-netlify-identity-button>Let's get started</div>
+      <div data-netlify-identity-button></div>
     </div>
   </section>
         
