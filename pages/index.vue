@@ -4,16 +4,15 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        LIVEGLU LOGIN
+        Liveglu Login
       </h1>
       <h2 class="subtitle">
-        Frank is so cool.
+        proof Frank isn't crazy.
       </h2>
-      
       <div data-netlify-identity-button>Let's get started</div>
     </div>
   </section>
-        <div data-netlify-identity-button>Let's get started</div>
+        
 
 </template>
 
