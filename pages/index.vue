@@ -1,22 +1,20 @@
 <template>
   <section class="container">
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <div>
       <app-logo/>
       <h1 class="title">
-        login
+        Liveglu login
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        Frank is so cool.
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+        <!-- Add a menu:
+   Log in / Sign up - when the user is not logged in
+   Username / Log out - when the user is logged in
+  -->
+  <div data-netlify-identity-menu></div>
       </div>
     </div>
   </section>
