@@ -1,3 +1,2 @@
-/dashboard 200! Role=admin,member,editor
-/testauth/ /testlogin 404
-/dashboard /index.vue 404
+  /testauth/* 200! Role=admin
+    /testauth/ /testlogin 302
