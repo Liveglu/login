@@ -11,7 +11,7 @@
       </h2>
       <div data-netlify-identity-button></div>
       <li>
-                    <a href="/testauth/">Dashboard</a>
+                    <a href="/testauth">Dashboard</a>
                 </li>
     </div>
   </section>
