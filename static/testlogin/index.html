@@ -50,7 +50,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/testauth">Test Auth</a>
+                    <a href="/testauth/">Test Auth</a>
                 </li>
                 
                 <li>
@@ -75,7 +75,7 @@
                 <div class="card-panel grey lighten-5 black-text ">
                     <main>
                         <p id="primary-text">
-                        You would have been redirected here automatically if you went to the <a href="/testauth">Dashboard</a> page without being logged in.
+                        You would have been redirected here automatically if you went to the <a href="/testauth/">Dashboard</a> page without being logged in.
                          If you want to log in, click the button below.
                         </p>
                         
@@ -89,7 +89,7 @@
     <script>
     // This function does the date comparison and logs the user out if necessary, also updates the text.
             const updateLoginText = ()=>{
-                document.getElementById("primary-text").textContent="Looks like you've logged in successfully! Now try clicking the 'Dashboard' link at the top!"
+                document.getElementById("primary-text").textContent="Looks like you've logged in successfully! "
             }
             const compareDate = (exp) => {
                 const d = Date.now()
