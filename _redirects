@@ -1,2 +1,2 @@
-/testauth/* 200! Role=admin,member,editor,user,Daniel
+/dashboard 200! Role=admin,member,editor
 /testauth/ /testlogin 404
