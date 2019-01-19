@@ -30,16 +30,14 @@
                                     <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="/testauth">Test Auth</a>
+                                <a href="/testauth">Dashboard</a>
                             </li>
                             
                             </li>
                             <li>
                                     <a href="/testlogin/">Login</a>
                             </li>
-                            <li>
-                                    <a href="/admin/">NetlifyCMS</a>
-                            </li>
+                            
                         </ul>
 
                     </div>
@@ -56,16 +54,14 @@
                 <li>
                     <a href="/testlogin/">Login</a>
                 </li>
-                <li>
-                    <a href="/admin/">NetlifyCMS</a>
-                </li>
+                
                 <li onClick={this.openIdentityWidget}>
                     <a>Login</a>
                 </li>
             </ul>
 
 
-            <h1 class='bannerText1'> Netlify
+            <h1 class='bannerText1'> Liveglu
                 <strong onClick={this.handleLogIn} class="bannerText1strong">IDENTITY</strong>
             </h1>
 
@@ -77,14 +73,10 @@
                 <div class="card-panel grey lighten-5 black-text ">
                     <main>
                         <p id="primary-text">
-                        You would have been redirected here automatically if you went to the <a href="/testauth">Test Auth</a> page without being logged in.
-                        You can also go to this page by clicking on the 'Login' link at the top of the page. If you want to log in, click the button below.
+                        You would have been redirected here automatically if you went to the <a href="/testauth">Dashboard</a> page without being logged in.
+                         If you want to log in, click the button below.
                         </p>
-                        <p>You can log in with these credentials:</p>
-                        <blockquote>
-                            <strong>username:</strong> test@netlify.com <br />  
-                            <strong>password:</strong> testing
-                        </blockquote>
+                        
                         <button class="btn waves-effect waves-light black" type="submit" name="action" data-netlify-identity-button><i class="material-icons right"></i></button>
                     </main>
                 </div>
