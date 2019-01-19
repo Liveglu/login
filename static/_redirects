@@ -1,3 +1,2 @@
 /testauth/*			200	Role=admin
-/testauth/	/testlogin	401
-/testauth/index.html /testauth/
+/testauth/	/testlogin	404
