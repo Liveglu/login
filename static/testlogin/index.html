@@ -32,7 +32,9 @@
                             <li>
                                 <a href="/testauth">Dashboard</a>
                             </li>
-                            
+                            <li>
+                    <a href="/testauth">Test Auth</a>
+                </li>
                             </li>
                             <li>
                                     <a href="/testlogin/">Login</a>
@@ -87,7 +89,7 @@
     <script>
     // This function does the date comparison and logs the user out if necessary, also updates the text.
             const updateLoginText = ()=>{
-                document.getElementById("primary-text").textContent="Looks like you've logged in successfully! Now try clicking the 'Test Auth' link at the top!"
+                document.getElementById("primary-text").textContent="Looks like you've logged in successfully! Now try clicking the 'Dashboard' link at the top!"
             }
             const compareDate = (exp) => {
                 const d = Date.now()
