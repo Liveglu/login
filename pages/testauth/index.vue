@@ -1,106 +1,56 @@
-<!doctype html>
-<html lang="en">
-
-<head>
+<template>
+  <section class="container">
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/css/app.css">
-    
-    <title>Identity Example Site</title>
-</head>
-<body>
-        
-    <div id="root"></div>
-    <div class="App">
-        <div class="navDiv">
-            <div class="navbar-fixed">
-                <nav>
-                    <div class="nav-wrapper blue darken-3">
-                        <a href="/" class="brand-logo">
-                            
-                        </a>
-                        <a href="#" data-activates="mobile-demo" class="button-collapse">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul class="right hide-on-med-and-down">
-                            <li>
-                                    <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="/testauth">Test Auth</a>
-                            </li>
-                            
-                            <li>
-                                <a href="/testlogin/">Login</a>
-                            </li>
-                            <li>
-                                    <a href="/admin/">NetlifyCMS</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </nav>
-            </div>
-            <ul class="side-nav" id="mobile-demo">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/testauth">Test Auth</a>
-                </li>
-                
-                <li>
-                    <a href="/testlogin/">Login</a>
-                </li>
-                <li>
-                    <a href="/admin/">NetlifyCMS</a>
-                </li>
-                <li onClick={this.openIdentityWidget}>
-                    <a>Login</a>
-                </li>
-            </ul>
-
-
-            <h1 class='bannerText1'> Netlify
-                <strong onClick={this.handleLogIn} class="bannerText1strong">IDENTITY</strong>
-            </h1>
-
-        </div>
-       
-        <div class="container shiftUp">
-            <div class="row">
-                <div class="col s12">
-                <div class="card-panel grey lighten-5 black-text ">
-                    <main>
-                        <p>It looks like you've successfully logged in, and you're also an admin! (Otherwise you wouldn't have access to this page.)</p>
-                        Open your JavaScript console and take a look at the <code>user</code> object. 
-                        <p>It's made available because of the <a href="https://github.com/netlify/netlify-identity-widget" target="_blank">netlify-identity-widget</a> via <a href="https://github.com/netlify/gotrue-js" target="_blank">gotrue-js</a>.</p>
-                    </main>
-                </div>
-                </div>
-            </div>
-           
+    <div>
+      <app-logo/>
+      <h1 class="title">
+        You did it!
+      </h1>
+      <h2 class="subtitle">
+        You are now logged into the dashboard
+      </h2>
+      <div data-netlify-identity-button></div>
     </div>
-    
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
- -    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-        <script>// Bind to events
-        if (window.netlifyIdentity){
-            netlifyIdentity.on("init", user => console.log(user));
-            netlifyIdentity.on("open", () => console.log("Widget opened"));
-            netlifyIdentity.on("close", () => console.log("Widget closed"));
-        }
-        </script>
- -    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".button-collapse").sideNav();
-        })
-    </script>
-</body>
+  </section>
+        
 
-</html>
+</template>
+
+<script>
+import AppLogo from '~/components/AppLogo.vue'
+export default {
+  components: {
+    AppLogo
+  }
+}
+</script>
+
+<style>
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+.links {
+  padding-top: 15px;
+}
+</style>
+
 © 2019 GitHub, Inc.
