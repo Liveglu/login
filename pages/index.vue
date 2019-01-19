@@ -7,9 +7,12 @@
         Liveglu Login
       </h1>
       <h2 class="subtitle">
-        Evidence of Frank's Genius.
+     Just Getting Started
       </h2>
       <div data-netlify-identity-button></div>
+      <li>
+                    <a href="/testauth">Dashboard</a>
+                </li>
     </div>
   </section>
         
