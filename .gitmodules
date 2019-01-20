@@ -1,0 +1,6 @@
+[submodule "static/Vue-Fullstack-Starter"]
+	path = static/Vue-Fullstack-Starter
+	url = git@github.com:Shyam-Chen/Vue-Fullstack-Starter.git
+[submodule "static/dash"]
+	path = static/dash
+	url = git@github.com:Shyam-Chen/Vue-Fullstack-Starter.git
